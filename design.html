@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Design - RaviVerse</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(#0f0f0f, #1c1c1c);
+        color: white;
+      }
+
+      .navbar {
+        background-color: #111;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar a {
+        color: orange;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: bold;
+      }
+
+      .content {
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .content h1 {
+        color: orange;
+        font-size: 40px;
+      }
+
+      .content p {
+        max-width: 800px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        gap: 20px;
+      }
+
+      .card {
+        background-color: #222;
+        border-radius: 12px;
+        padding: 25px;
+        width: 250px;
+        transition: 0.3s;
+        border: 2px solid orange;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        background-color: #333;
+      }
+
+      .card h3 {
+        color: orange;
+      }
+
+      .card p {
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div style="color: white; font-size: 24px">RaviVerse</div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="design.html">Design</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Design Showcase</h1>
+      <p>
+        Here are some of the latest and creative web design layouts. These
+        designs are mobile-friendly, responsive, and follow modern UI/UX
+        standards.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Modern Portfolio</h3>
+          <p>
+            A clean, elegant design suitable for personal portfolio websites.
+          </p>
+        </div>
+        <div class="card">
+          <h3>E-commerce Store</h3>
+          <p>
+            A product-focused design layout for selling items online easily.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Business Website</h3>
+          <p>A corporate-style design with a professional feel and layout.</p>
+        </div>
+        <div class="card">
+          <h3>Landing Page</h3>
+          <p>
+            Perfect for app launches or product presentations with CTA buttons.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
