@@ -169,7 +169,7 @@ body {
   color: #ff7200;
 }
 
-/* ✅ Responsive Design */
+/* 📱 Mobile Screens */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -187,10 +187,7 @@ body {
     align-items: flex-start;
   }
 
-  .srch {
-    width: 100%;
-  }
-
+  .srch,
   .btn {
     width: 100%;
     margin-top: 5px;
@@ -205,6 +202,54 @@ body {
   }
 
   .form {
-    width: 90%;
+    width: 90%;
+  }
+}
+
+/* 💻 Desktop Screens */
+@media (min-width: 769px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu ul {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .search {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .srch {
+    width: 200px;
+  }
+
+  .btn {
+    width: auto;
+  }
+
+  .content {
+    padding: 60px 80px;
+    text-align: left;
+  }
+
+  .content h1 {
+    font-size: 48px;
+  }
+
+  .content span {
+    font-size: 60px;
+  }
+
+  .form {
+    width: 300px;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top: -300px;
   }
 }
