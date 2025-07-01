@@ -400,29 +400,77 @@ footer {
   color: gray;
 }
 
-/* Responsive adjustments */
+/* ✅ Real Mobile Responsive Fixes */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  .container {
-    flex-direction: column;
+  .navbar {
     width: 100%;
-  }
-
-  img {
-    max-width: 100%;
+    flex-direction: column;
     height: auto;
   }
 
-  nav ul {
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .menu ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .search {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    float: none;
+  }
+
+  .srch {
+    width: 70%;
+  }
+
+  .btn {
+    width: 25%;
+  }
+
+  .content {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .content span {
+    font-size: 36px;
+  }
+
+  .form {
+    position: static;
+    width: 90%;
+    margin: 30px auto;
+    transform: none;
+  }
+
+  .form input,
+  .btnn {
+    width: 100%;
+  }
+
+  .icons ion-icon {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  ul {
     flex-direction: column;
     align-items: center;
   }
 
-  nav ul li {
+  ul li {
     margin: 10px 0;
   }
 }
