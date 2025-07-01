@@ -1,563 +1,210 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
 }
 
 .main {
   width: 100%;
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.5) 50%
-    ),
-    url(1.jpg);
-  background-position: center;
-  background-size: cover;
   height: 100vh;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .navbar {
-  width: 1200px;
-  height: 75px;
-  margin: auto;
-}
-
-.icon {
-  width: 200px;
-  float: left;
-  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
 }
 
 .logo {
   color: #ff7200;
   font-size: 35px;
-  font-family: Arial;
-  padding-left: 20px;
-  float: left;
-  padding-top: 10px;
-  margin-top: 5px;
-}
-
-.menu {
-  width: 400px;
-  float: left;
-  height: 70px;
-}
-
-ul {
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-ul li {
-  list-style: none;
-  margin-left: 62px;
-  margin-top: 27px;
-  font-size: 14px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-family: Arial;
   font-weight: bold;
-  transition: 0.4s ease-in-out;
 }
 
-ul li a:hover {
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
   color: #ff7200;
 }
 
 .search {
-  width: 330px;
-  float: left;
-  margin-left: 270px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .srch {
-  font-family: "Times New Roman";
-  width: 200px;
-  height: 40px;
-  background: transparent;
+  padding: 8px 10px;
   border: 1px solid #ff7200;
-  margin-top: 13px;
-  color: #fff;
   border-right: none;
-  font-size: 16px;
-  float: left;
-  padding: 10px;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  background: transparent;
+  color: white;
+  width: 150px;
 }
 
 .btn {
-  width: 100px;
-  height: 40px;
+  padding: 9px 15px;
   background: #ff7200;
-  border: 2px solid #ff7200;
-  margin-top: 13px;
-  color: #fff;
-  font-size: 15px;
-  border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  transition: 0.2s ease;
+  color: white;
+  border: none;
   cursor: pointer;
-}
-.btn:hover {
-  color: #000;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.srch:focus {
-  outline: none;
 }
 
 .content {
-  width: 1200px;
-  height: auto;
-  margin: auto;
-  color: #fff;
-  position: relative;
-}
-
-.content .par {
-  padding-left: 20px;
-  padding-bottom: 25px;
-  font-family: Arial;
-  letter-spacing: 1.2px;
-  line-height: 30px;
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
 }
 
 .content h1 {
-  font-family: "Times New Roman";
-  font-size: 50px;
-  padding-left: 20px;
-  margin-top: 9%;
-  letter-spacing: 2px;
-}
-
-.content .cn {
-  width: 160px;
-  height: 40px;
-  background: #ff7200;
-  border: none;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  font-size: 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-
-.content .cn a {
-  text-decoration: none;
-  color: #000;
-  transition: 0.3s ease;
-}
-
-.cn:hover {
-  background-color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .content span {
   color: #ff7200;
-  font-size: 65px;
+  font-size: 48px;
+}
+
+.content .par {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cn {
+  background: #ff7200;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.cn a {
+  text-decoration: none;
+  color: black;
 }
 
 .form {
-  width: 250px;
-  height: 380px;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0.8) 50%
-  );
-  position: absolute;
-  top: -20px;
-  left: 870px;
-  transform: translate(0%, -5%);
+  width: 300px;
+  margin: 30px auto;
+  background: rgba(0,0,0,0.8);
+  padding: 20px;
   border-radius: 10px;
-  padding: 25px;
 }
 
 .form h2 {
-  width: 220px;
-  font-family: sans-serif;
-  text-align: center;
   color: #ff7200;
-  font-size: 22px;
-  background-color: #fff;
-  border-radius: 10px;
-  margin: 2px;
-  padding: 8px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .form input {
-  width: 240px;
-  height: 35px;
+  width: 100%;
+  padding: 10px;
   background: transparent;
-  border-bottom: 1px solid #ff7200;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  color: #fff;
-  font-size: 15px;
-  letter-spacing: 1px;
-  margin-top: 30px;
-  font-family: sans-serif;
-}
-
-.form input:focus {
-  outline: none;
-}
-
-::placeholder {
-  color: #fff;
-  font-family: Arial;
-}
-
-.btnn {
-  width: 240px;
-  height: 40px;
-  background: #ff7200;
-  border: none;
-  margin-top: 30px;
-  font-size: 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: #fff;
-  transition: 0.4s ease;
-}
-.btnn:hover {
-  background: #fff;
-  color: #ff7200;
-}
-.btnn a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-.form .link {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  padding-top: 20px;
-  text-align: center;
-}
-.form .link a {
-  text-decoration: none;
-  color: #ff7200;
-}
-.liw {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-.icons a {
-  text-decoration: none;
-  color: #fff;
-}
-.icons ion-icon {
-  color: #fff;
-  font-size: 30px;
-  padding-left: 14px;
-  padding-top: 5px;
-  transition: 0.3s ease;
-}
-.icons ion-icon:hover {
-  color: #ff7200;
-}
-
-/* service.css ka code */
-
-.service-section {
-  padding: 50px 20px;
-  background: #121212;
-  text-align: center;
-}
-
-.service-header h1 {
-  font-size: 36px;
-  color: orange;
-}
-
-.service-header h1 span {
+  border: 1px solid #ff7200;
   color: white;
-}
-
-.service-header p {
-  font-size: 18px;
-  color: #ccc;
-  margin-top: 10px;
-}
-
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 40px;
-  gap: 30px;
-}
-
-.service-box {
-  background: #1e1e1e;
-  border: 1px solid #333;
-  padding: 30px;
-  border-radius: 10px;
-  width: 280px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s;
-}
-
-.service-box:hover {
-  transform: translateY(-10px);
-  border-color: orange;
-}
-
-.service-box h2 {
-  color: orange;
   margin-bottom: 15px;
 }
 
-.service-box p {
-  color: #ddd;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* about.css ka code hai ye--- */
-
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: #111;
-  color: #eee;
-}
-
-header {
-  background: #000;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  color: orange;
-  font-size: 24px;
+.btnn {
+  width: 100%;
+  padding: 10px;
+  background: #ff7200;
+  border: none;
+  color: white;
   font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.btnn:hover {
+  background: white;
+  color: #ff7200;
 }
 
-nav ul li a {
+.link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.link a {
+  color: #ff7200;
   text-decoration: none;
+}
+
+.liw {
+  margin: 15px 0 5px;
+}
+
+.icons a {
   color: white;
-  padding: 6px 12px;
+  padding: 0 8px;
+  font-size: 24px;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-  background: orange;
-  color: black;
-  border-radius: 4px;
+.icons a:hover {
+  color: #ff7200;
 }
 
-.about-section {
-  padding: 50px 20px;
-  background: linear-gradient(to right, #111, #222);
-  text-align: center;
-}
-
-.about-section h1 {
-  font-size: 36px;
-  color: orange;
-}
-
-.about-section h1 span {
-  color: white;
-}
-
-.about-section p {
-  max-width: 800px;
-  margin: 20px auto;
-  line-height: 1.6;
-  font-size: 18px;
-}
-
-footer {
-  background: #000;
-  text-align: center;
-  padding: 20px;
-  color: gray;
-}
-
-/* ✅ Real Mobile Responsive Fixes */
+/* ✅ Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    width: 100%;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .menu ul {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 20px;
-  }
-
-  .menu ul li {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .search {
-    width: 100%;
-    margin: 10px 0;
-    text-align: center;
-    float: none;
-  }
-
-  .srch {
-    width: 70%;
-  }
-
-  .btn {
-    width: 25%;
-  }
-
-  .content {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-  }
-
-  .content h1 {
-    font-size: 32px;
-  }
-
-  .content span {
-    font-size: 36px;
-  }
-
-  .form {
-    position: static;
-    width: 90%;
-    margin: 30px auto;
-    transform: none;
-  }
-
-  .form input,
-  .btnn {
-    width: 100%;
-  }
-
-  .icons ion-icon {
-    font-size: 24px;
-    padding: 10px;
-  }
-
-  ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  ul li {
-    margin: 10px 0;
-  }
-}
-
-/* Responsive fixes again */
-
-@media (max-width: 768px) {
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-
-  .menu {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
+    gap: 10px;
   }
 
   .menu ul {
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-
-  .menu ul li {
-    margin: 8px 0;
+    gap: 10px;
   }
 
   .search {
-    width: 100%;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .srch {
-    width: 60%;
-    height: 35px;
-    font-size: 14px;
+    width: 100%;
   }
 
   .btn {
-    width: 30%;
-    height: 35px;
-    font-size: 14px;
-    margin-left: 5px;
-  }
-
-  .content {
     width: 100%;
-    margin: 20px auto;
-    text-align: center;
+    margin-top: 5px;
   }
 
   .content h1 {
-    font-size: 32px;
-    line-height: 40px;
-    margin: 20px 0;
+    font-size: 28px;
   }
 
   .content span {
-    font-size: 36px;
-  }
-
-  .content .par {
-    padding: 0 10px;
-    font-size: 16px;
+    font-size: 32px;
   }
 
   .form {
-    position: static;
-    width: 90%;
-    margin: 30px auto;
-    transform: none;
-  }
-
-  .form input,
-  .btnn {
-    width: 100%;
-  }
-
-  .icons ion-icon {
-    font-size: 24px;
-    padding: 8px;
+    width: 90%;
   }
 }
